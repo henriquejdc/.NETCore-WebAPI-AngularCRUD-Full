@@ -1,0 +1,12 @@
+<form>
+    <div class="mb-3">
+      <label for="statusOption" class="form-label">Status Option</label>
+      <input type="text" class="form-control" [(ngModel)]="statusOption" name="statusOption">
+    </div>
+    <button (click)="addStatus()" *ngIf="status.id==0" class="btn btn-primary">
+      Add
+    </button>
+    <button (click)="updateStatus()" *ngIf="status.id!=0" class="btn btn-primary">
+      Update
+    </button>
+  </form>

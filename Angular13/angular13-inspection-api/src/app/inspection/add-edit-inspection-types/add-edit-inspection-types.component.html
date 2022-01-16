@@ -1,0 +1,12 @@
+<form>
+    <div class="mb-3">
+      <label for="inspectionName" class="form-label">Inspection Name</label>
+      <input type="text" class="form-control" [(ngModel)]="inspectionName" name="inspectionName">
+    </div>
+    <button (click)="addInspectionTypes()" *ngIf="inspectiontypes.id==0" class="btn btn-primary">
+      Add
+    </button>
+    <button (click)="updateInspectionTypes()" *ngIf="inspectiontypes.id!=0" class="btn btn-primary">
+      Update
+    </button>
+  </form>
